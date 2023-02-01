@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+p {
+    font-size: 1.1em;
+line-height: 1.6em;
+}
+
+header, section, footer {
+    padding: 60px 15vw;
+}
+
+header {
+    background: #F4F4F4;
+height: 150px;
+}
