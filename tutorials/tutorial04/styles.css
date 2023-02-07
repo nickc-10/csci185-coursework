@@ -20,3 +20,11 @@ header {
     background: #F4F4F4;
 height: 150px;
 }
+
+h2 {
+    min-height: 100vh;
+    background: #F4F4F4;
+}
+
+
+  
