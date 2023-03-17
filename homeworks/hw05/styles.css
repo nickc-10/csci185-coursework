@@ -11,3 +11,36 @@ body {
 }
 
 /* Your CSS Code Here! */
+
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul {
+    display: flex;
+    column-gap: 20px;
+    list-style-type: none;
+    
+}
+
+a {
+    color: #57A773;
+}
+
+a:link {
+    text-decoration: none;
+  }
+  
+  a:visited {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  a:active {
+    text-decoration: none;
+  }
