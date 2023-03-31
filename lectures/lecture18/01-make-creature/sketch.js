@@ -5,15 +5,10 @@ function setup() {
 
 
     
-
+makeCreature (200,200, 'blue', 'yellow');
+makeCreature (500,300, 'green', 'orange');
     // your creature:
-    fill('yellow')
-    circle(300, 300, 300)
-
-    fill('black')
-    ellipse(250, 250, 30, 40)
-    ellipse(350, 250, 30, 40)
-
+   
 
 
 
@@ -21,4 +16,24 @@ function setup() {
 
     // for debugging:
     drawGrid(canvasWidth, canvasHeight)
+}
+
+function makeCreature (x, y, fillColor, eyeColor, outlineColor){
+
+    fill(fillColor);
+    //face:
+    circle(x, y, 300);
+    
+
+    fill(eyeColor)
+    //left eye:
+    ellipse(x - 50, y - 50, 30, 40);
+    //right eye:
+    ellipse(x + 50, y - 50, 30, 40);
+
+}
+
+function mouseClicked () {
+
+    makeCreature(mouseX, mouseY, 'red', 'grey')
 }
