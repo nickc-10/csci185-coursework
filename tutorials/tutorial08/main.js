@@ -9,14 +9,31 @@ function setup() {
 }
 
 function mouseDragged(){
-    // Your job:
-    // When the user drags the mouse on the canvas, you should honor
-    // the color, shape, and size of the paintbrush that are selected
-    // in the right-hand panel. Replace the code below with something
-    // smarter:
-    fill('hotpink');
-    circle(mouseX, mouseY, 20);
+   
+    const fillColor = document.querySelector('#color').value;
+    fill(fillColor);
+    const size = document.querySelector('#size').value;
+    const shape = document.querySelector('#shape').value;
+    const strokeColor = document.querySelector('#outline_color').value;
+    stroke(strokeColor);
+
+    
+   
+    if (shape === 'circle') {
+        circle(mouseX, mouseY, size);
+    } else if (shape === 'square') {
+        square(mouseX, mouseY, size);
+    } else  {
+        triangle(
+            mouseX, mouseY - size/2, // first point
+            mouseX - size/2, mouseY + size/2, // second point
+            mouseX + size/2, mouseY + size/2  // third point
+        );
+    }
+    
 }
+
+
 
 
 
